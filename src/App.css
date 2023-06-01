@@ -1,16 +1,19 @@
-  .navbar-border {
-    display: flex;
-    align-items: center;
-    background-image: linear-gradient(to right, white, lightblue);
-  }
-  
-  .buttons-container {
-    display:flex;
-    padding-top: 3%;
-    position: absolute;
-    right: 11%;
-    gap:5%;
-  }
+.navbar-border {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(to right, white, lightblue);
+  /* Sets up a flex container with centered alignment for the navbar */
+}
+
+.buttons-container {
+  display:flex;
+  padding-top: 3%;
+  position: absolute;
+  right: 11%;
+  gap:5%;
+  /* Sets up a flex container for the buttons with 3% padding on top,
+  absolute positioning on the right side, and a gap of 5% between the buttons */
+}
 
 .button {
   background-color: #f3f3f3;
@@ -23,31 +26,37 @@
   transition-duration: 0.4s;
   cursor: pointer;
   border-radius: 12px;
+  /* Styles for the design of buttons */
 }
 
 .button.clicked {
   background-color: #555555;
   color: white;
+  /* Styles for the buttons when they are clicked */
 }
 
 @media (max-width: 768px) {
   .buttons-container {
       right: 11%;
   }
+  /* Modifies the position of the buttons container for screens with a maximum width of 768px */
 
   .button {
       padding: 10px 20px;
       font-size: 14px;
   }
+  /* Modifies the padding and font size of the buttons for screens with a maximum width of 768px */
 }
 
 @media (max-width: 480px) {
   .buttons-container {
       right: 1%;
   }
+  /* Modifies the position of the buttons container for screens with a maximum width of 480px */
 
   .button {
       padding: 5px 10px;
       font-size: 12px;
   }
+  /* Modifies the padding and font size of the buttons for screens with a maximum width of 480px */
 }

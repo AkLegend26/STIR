@@ -1,171 +1,195 @@
 .message_box_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .container {
-    width: 80%;
-  }
-  
-  .MuiTabs-root {
-    border-radius: 10px;
-    display: flex;
-    gap: 10px; /* Add space between tabs */
-  }
-  
-  .MuiTabs-scroller {
-    overflow: hidden !important;
-  }
-  
-  .MuiTab-root {
-    background-color: #ccc !important;
-    opacity: 1 !important;
-    border-radius: 10px 10px 0 0;
-  }
-  
-  .Mui-selected {
-    background-color: #aaa !important;
-  }
-  
-  .chatbox-container {
-    background-color: #f5f5f5;
-    border-radius: 5px;
-    padding: 10px;
-    display: flex;
-    height: 60vh;
-    outline: 2px solid rgb(231, 231, 231);
-  }
-  
-  .names-container {
-    flex: 1;
-    border-right: 1px solid #ccc;
-    padding: 10px;
-    overflow-y: auto;
-  }
-  
-  .name {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    cursor: pointer;
-    transition: color 0.3s ease;
-    padding: 5%;
-    justify-content: space-between;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Centers the message box container horizontally and vertically */
+}
 
-  .name > div {
-    display: flex;
-    align-items: center;
-  }
+.container {
+  width: 80%;
+  /* Sets the width of the container to 80% */
+}
 
-  .name:hover {
-    color: #f00;
-  }
-  
-  .contacts {
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  
-  .current-user-message-box {
-    flex: 3;
-    padding-left: 10px;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: rgb(248, 248, 248);
-  }
+.MuiTabs-root {
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  /* Styles for the tabs root element, including flex display, and gap between tabs */
+}
 
-  .conversation-container {
-    display: flex;
-    flex-direction: column;
-    width: 98%;
-    background-color: rgb(248, 248, 248);
-    padding:1%;
-  }
-  
-  .conversation {
-    margin-bottom: 5px;
-  }
-  
-  .current-user {
-    padding-top: 3%;
-    padding-bottom: 3%;
-    border-bottom:2px solid;
-    width: 93%;
+.MuiTabs-scroller {
+  overflow: hidden !important;
+  /* Hides the overflow of the tabs scroller */
+}
 
-  }
-  .message-sender {
-    background-color: #ffffff;
-    align-self: flex-end;
-    margin-left: auto;
-    border-radius: 15px;
-    padding: 1%;
-    border: 2px solid #000; 
-    width: 50%;
-  }
-  
-  .message-receiver {
-    background-color: #fff;
-    align-self: flex-start;
-    width: 50%;
-    margin-right: auto;
-    border-radius: 12px;
-    padding:1%;
-    border: 2px solid rgb(130, 207, 248); 
-  }
+.MuiTab-root {
+  background-color: #ccc !important;
+  opacity: 1 !important;
+  border-radius: 10px 10px 0 0;
+  /* Styles for the tab root element */
+}
 
-  .receiver-name{
-    display: flex;
-    align-self: flex-start;
-    padding-top: 3%;
-  }
+.Mui-selected {
+  background-color: #aaa !important;
+  /* Styles for the selected tab, including background color */
+}
 
-  .sender-name{
-    display:flex;
-    align-self: flex-end;
-    padding-top: 3%;
-  }
-  
+.chatbox-container {
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  height: 60vh;
+  outline: 2px solid rgb(231, 231, 231);
+  /* Styles for the chatbox container */
+}
 
-  .profile-photo_1 {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: red; 
-    margin-right: 10px;
-  }
-  .profile-photo_2 {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: rgb(17, 0, 255); 
-    margin-right: 10px;
-  }
-  
-  .relation {
-    text-decoration: underline;
-    text-decoration-color: blue;
-    text-decoration-thickness: 15%;
-    position: relative;
-    right: 10%;
-    font-style: italic;
-  }
-  
-  .tab-name {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    cursor: pointer;
-  }
-  
-  .tab-name .profile-photo {
-    margin-right: 10px;
-  }
+.names-container {
+  flex: 1;
+  border-right: 1px solid #ccc;
+  padding: 10px;
+  overflow-y: auto;
+  /* Styles for the names container */
+}
 
-  .active {
-    background-color: #e3e2e2; /* Change this color to your preferred highlight color */
-  }
+.name {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  padding: 5%;
+  justify-content: space-between;
+  /* Styles for the name element */
+}
+
+.name > div {
+  display: flex;
+  align-items: center;
+  /* Styles for the div element inside the name element, including flex and alignment */
+}
+
+.name:hover {
+  color: #f00;
+  /* Styles for the name element when hovered */
+}
+
+.contacts {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  /* Styles for the contacts text */
+}
+
+.current-user-message-box {
+  flex: 3;
+  padding-left: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: rgb(248, 248, 248);
+  /* Styles for the current user message box */
+}
+
+.conversation-container {
+  display: flex;
+  flex-direction: column;
+  width: 98%;
+  background-color: rgb(248, 248, 248);
+  padding:1%;
+  /* Styles for the conversation container */
+}
+
+.conversation {
+  margin-bottom: 5px;
+  /* Styles for the conversation elements, including margin bottom */
+}
+
+.current-user {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  border-bottom:2px solid;
+  width: 93%;
+  /* Styles for the current user element */
+}
+.message-sender {
+  background-color: #ffffff;
+  align-self: flex-end;
+  margin-left: auto;
+  border-radius: 15px;
+  padding: 1%;
+  border: 2px solid #000; 
+  width: 50%;
+  /* Styles for the message sender element with these attributes*/
+}
+
+.message-receiver {
+  background-color: #fff;
+  align-self: flex-start;
+  width: 50%;
+  margin-right: auto;
+  border-radius: 12px;
+  padding:1%;
+  border: 2px solid rgb(130, 207, 248); 
+  /* Styles for the message receiver element with above attributes */
+}
+
+.receiver-name{
+  display: flex;
+  align-self: flex-start;
+  padding-top: 3%;
+  /* Styles for the receiver name element, including flex, alignment, and padding top */
+}
+
+.sender-name{
+  display:flex;
+  align-self: flex-end;
+  padding-top: 3%;
+  /* Styles for the sender name element, including flex, alignment, and padding top */
+}
+
+.profile-photo_1 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: red; 
+  margin-right: 10px;
+  /* Styles for the profile photo 1 element */
+}
+.profile-photo_2 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(17, 0, 255); 
+  margin-right: 10px;
+  /* Styles for the profile photo 2 element */
+}
+
+.relation {
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-decoration-thickness: 15%;
+  position: relative;
+  right: 10%;
+  font-style: italic;
+  /* Styles for the relation element, including text styling */
+}
+
+.tab-name {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+  /* Styles for the tab name element */
+}
+
+.tab-name .profile-photo {
+  margin-right: 10px;
+  /* Styles for the profile photo element inside the tab name element */
+}
+
+.active {
+  background-color: #e3e2e2;
+  /* Styles for the active element */
+}

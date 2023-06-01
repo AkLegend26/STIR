@@ -19,7 +19,7 @@ const Message = () => {
   return (
     <div className='message_box_container'>
       <div className="container">
-        <Box sx={{ width: '100%' }}>
+        <Box sx={{ width: '100%' }}> {/*Generates the T1,T2,T3 tabs */}
           <Tabs
             value={value}
             onChange={handleChange}
@@ -35,7 +35,7 @@ const Message = () => {
         {value === 'one' && (
           <div className="chatbox-container">
             <div className="names-container">
-              
+              {/*Defines the left hand side of message box */}
               <div className='contacts'>
                 <header>Conversations</header>
                 <div className={`name ${activeName === 'P1' ? 'active' : ''}`} 
@@ -48,7 +48,7 @@ const Message = () => {
                 </div>
                 <div className={`name ${activeName === 'P2' ? 'active' : ''}`} 
                      onClick={() => handleNameClick('P2')}>
-                  <div>
+                  <div> {/*Adds P1 and P2 with on click properties */}
                     <div className="profile-photo_2"></div>
                     p2
                   </div>
@@ -61,11 +61,11 @@ const Message = () => {
             <div className='current-user'>
                     {activeName}
                 </div>
-
+            {/*Conversation container has all the messages on the right side */}
             <div className="conversation-container">
               {activeName === 'P1' && (
                 <>
-                  
+                    {/*All the messages contents are below */}
                     <div className="receiver-name">P2</div>
                     <div className="message-receiver">
                         <div>Lorem Ipsum has been the industry's standard dummy text
@@ -120,6 +120,7 @@ const Message = () => {
             </div>
           </div>
         )}
+        {/*Different tabs implmentation, T2 and T3 */}
         {value === 'two' && (
           <div>NOTHING TO SEE HERE</div>)}
         {value === 'three' && (

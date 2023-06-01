@@ -2,46 +2,53 @@
     display: flex;
     align-items: center;
     background-image: linear-gradient(to right, white, lightblue);
+    /* Sets up a flex container for the chat navbar with centered alignment 
+    and a gradient background */
 }
 
 .chat__navbar-left {
     display: flex;
     flex: auto;
     align-items: center;
+    /* Sets up a flex container for the left section of the chat navbar*/
 }
 
 .chat__navbar-button {
     display: flex;
     align-self: center;
+    /* Sets up a flex container for the chat navbar button with centered alignment */
 }
 
 .chat__navbar-links_logo {
     align-self: center;
     padding-left: 4%;
+    /* Aligns the chat navbar links and logo to the center and adds padding on the left side */
 }
 
 .chat__navbar-links_logo img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    
+    /* Sets the width and height of the chat navbar logo image to 100px and applies a 
+    border radius for a circular shape */
 }
 
 .user-container {
     display: flex;
     padding-right: 11%;
+    /* Sets up a flex container for the user container with 11% padding on the right side */
 }
 
 .user-text {
     font-size: x-large;
     color: blueviolet;
+    /* Applies a larger font size and sets the text color to blueviolet for the user text */
 }
 
 .dropdown-menu {
     position: absolute;
-    top:9%;
+    top: 9%;
     background-color: #f9f9f9;
     padding: 1%;
-  }
-  
-  
+}
+/* Styles for the dropdown menu*/
