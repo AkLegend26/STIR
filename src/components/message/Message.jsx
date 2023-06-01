@@ -72,7 +72,6 @@ const Message = () => {
                               ever since the 1500s,</div>
                         </div>
                   
-                
                     <div className="sender-name">P1</div>
                     <div className="message-sender">
                         <div>Lorem Ipsum has been the industry's standard dummy text
@@ -84,7 +83,6 @@ const Message = () => {
                               ever since the 1500s,</div>
                         </div>
                   
-                
                     <div className="sender-name">P1</div>
                     <div className="message-sender">
                         <div>Lorem Ipsum has been the industry's standard dummy text
@@ -95,7 +93,6 @@ const Message = () => {
                         <div>Lorem Ipsum has been the industry's standard dummy text
                               ever since the 1500s,</div>
                         </div>
-                  
                 
                     <div className="sender-name">P1</div>
                     <div className="message-sender">
@@ -126,7 +123,7 @@ const Message = () => {
         {value === 'two' && (
           <div>NOTHING TO SEE HERE</div>)}
         {value === 'three' && (
-        <div>HIDDEN COMPARTMENT/ </div>)}
+        <div>HIDDEN COMPARTMENT </div>)}
       </div>
     </div>
   );
