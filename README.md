@@ -1,8 +1,9 @@
-# Getting Started with Create React App
+# Getting Started with Create React App by Ayush
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
+Before running scripts make sure node is installed and yarn or npm.
 
 In the project directory, you can run:
 

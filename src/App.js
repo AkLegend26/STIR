@@ -1,25 +1,46 @@
-import logo from './logo.svg';
+import React , {useState} from 'react';
 import './App.css';
+import { Navbar, Message } from './components';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+const App = () => {
+    const [prevClicked, setPrevClicked] = useState(false);
+    const [nextClicked, setNextClicked] = useState(false);
+
+    const handlePrevClick = () => {
+        setPrevClicked(!prevClicked);
+    };
+
+    const handleNextClick = () => {
+        setNextClicked(!nextClicked);
+    };
+    return (
+        <div className='app_main'>
+        <div className='chat_navbar'>
+            <Navbar />
+        </div>
+        <div className='navbar-border'>
+        {/*maybe some url links if needed in this bar*/}
+        </div>
+        <div className='chat_main'>
+            <Message />
+        </div>
+        <div className="buttons-container">
+        <button 
+          className={`button ${prevClicked ? 'clicked' : ''}`} 
+          onClick={handlePrevClick}
         >
-          Learn React
-        </a>
-      </header>
+          Previous
+        </button>
+        <button 
+          className={`button ${nextClicked ? 'clicked' : ''}`} 
+          onClick={handleNextClick}
+        >
+          Next
+        </button>
+      </div>
     </div>
-  );
+    )
 }
+       
 
 export default App;
