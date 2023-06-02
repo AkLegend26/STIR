@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className='chat__navbar-left'>
         <div className='chat__navbar-button'>
           <button onClick={handleMenuClick}>
-            {dropdownOpen ? <FaTimes size='40' /> : <FaBars size='60' />}
+            {dropdownOpen ? <FaTimes size='60' /> : <FaBars size='60' />}
           </button>
           {dropdownOpen && (
             <div className="dropdown-menu">
