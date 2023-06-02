@@ -46,3 +46,12 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## How the page is supposed to look with different elements selected
+
+![Screenshot 2023-06-01 at 2 07 49 PM](https://github.com/AkLegend26/STIR/assets/90011317/253a8a66-ea09-4016-bd52-11cafbd10ac3)
+P1 and T1 selected with scrollbar on the right side
+![Screenshot 2023-06-01 at 2 08 17 PM](https://github.com/AkLegend26/STIR/assets/90011317/9b0fd59a-d39e-4513-9776-fffc81d4fc97)
+Top left menubar clicked, hovering over P1. P2 and Next selected.
+![Screenshot 2023-06-01 at 2 08 34 PM](https://github.com/AkLegend26/STIR/assets/90011317/aae83bbf-7400-4be9-9d6f-f7d8d6e90caa)
+T2, Next and Previous selected.
